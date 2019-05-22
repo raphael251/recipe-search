@@ -6,7 +6,7 @@ import App from '../App';
 import Recipe from './Recipe';
 
 const Router = () => (
-    <HashRouter basename="/recipe-search">
+    <HashRouter>
         <Switch>
             <Route path="/" exact component={App} />
             <Route path="/recipe/:id" component={Recipe} />
