@@ -1,17 +1,17 @@
 
 import React from 'react';
-import { BrowserRouter, Switch, Route } from 'react-router-dom';
+import { HashRouter, Switch, Route } from 'react-router-dom';
 
 import App from '../App';
 import Recipe from './Recipe';
 
 const Router = () => (
-    <BrowserRouter>
+    <HashRouter basename="/recipe-search">
         <Switch>
             <Route path="/" exact component={App} />
             <Route path="/recipe/:id" component={Recipe} />
         </Switch>
-    </BrowserRouter>
+    </HashRouter>
 );
 
 export default Router;
